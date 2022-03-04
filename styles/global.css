@@ -1,0 +1,30 @@
+main {
+  min-height: 90vh;
+  font-family: "Kameron";
+}
+a {
+  text-decoration: none;
+}
+a:hover{
+  opacity: 0.8;
+}
+
+/* Swiper */
+#swiper-color .swiper-button-next {
+  color: white;
+}
+#swiper-color .swiper-button-prev {
+  color: white;
+}
+.slide-image {
+  border-radius: 3px;
+  object-fit: cover;
+}
+@media screen and (max-width: 740px) {
+  #swiper-color .swiper-button-next {
+    display: none;
+  }
+  #swiper-color .swiper-button-prev {
+    display: none;
+  }
+}
