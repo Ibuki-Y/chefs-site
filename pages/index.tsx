@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import { Image, Box, Center } from "@chakra-ui/react";
+import { Image, Center } from "@chakra-ui/react";
 
 import { HomeSwiper } from "../components/molecules/Home/HomeSwiper";
 import { HomeMovie } from "../components/molecules/Home/HomeMovie";
@@ -26,7 +26,7 @@ const Home: NextPage = () => {
 
         <HomeSwiper />
 
-        <Center my={{base:12,md:4}}>
+        <Center my={{ base: 12, md: 4 }}>
           <ScrollRevealContainer delay={600}>
             <Image
               src="/logo/おいしいおんがく01.png"
@@ -49,11 +49,3 @@ const Home: NextPage = () => {
 };
 
 export default Home;
-
-/*
-<ScrollRevealContainer delay={300}>
-<Box mx={10}>
-<Image src="/logo/logo01_black.png" alt="logo" h="300px" />
-</Box>
-</ScrollRevealContainer>
-*/
