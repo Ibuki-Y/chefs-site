@@ -19,7 +19,6 @@ const theme = extendTheme({
       },
     },
   },
-  fonts: {},
 });
 
 export default theme;

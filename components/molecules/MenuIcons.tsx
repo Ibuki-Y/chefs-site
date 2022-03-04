@@ -1,4 +1,4 @@
-import React, { memo, useCallback, VFC } from "react";
+import React, { VFC } from "react";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import AppleIcon from "@mui/icons-material/Apple";
@@ -29,7 +29,11 @@ export const MenuIcons: VFC = () => {
       >
         <AppleIcon />
       </Box>
-      <Box as="a" href="" _hover={{ opacity: 0.7 }}>
+      <Box
+        as="a"
+        href="https://open.spotify.com/artist/7I6vgeUew4Ew1pxztnFhMa/"
+        _hover={{ opacity: 0.7 }}
+      >
         <ContactlessIcon />
       </Box>
     </Flex>

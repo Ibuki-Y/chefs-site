@@ -14,7 +14,6 @@
     "@emailjs/browser": "^3.4.0",
     "@emotion/react": "^11.8.1",
     "@emotion/styled": "^11.8.1",
-    "@fontsource/kameron": "^4.5.1",
     "@fontsource/noto-sans-jp": "^4.5.4",
     "@fontsource/open-sans": "^4.5.5",
     "@fontsource/raleway": "^4.5.3",
