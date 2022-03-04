@@ -18,12 +18,24 @@ export const MenuDrawer: VFC<Props> = (props) => {
         <DrawerContent>
           <DrawerBody as="nav" p={0} bg="gray.100">
             <Flex justify="center" align="center" direction="column">
-              <MenuButton hrefs="/">Top</MenuButton>
-              <MenuButton hrefs="/news">news</MenuButton>
-              <MenuButton hrefs="/about">about</MenuButton>
-              <MenuButton hrefs="/movie">movie</MenuButton>
-              <MenuButton hrefs="/goods">goods</MenuButton>
-              <MenuButton hrefs="/contact">contact</MenuButton>
+              <MenuButton hrefs="/" onClose={onClose}>
+                Top
+              </MenuButton>
+              <MenuButton hrefs="/news" onClose={onClose}>
+                news
+              </MenuButton>
+              <MenuButton hrefs="/about" onClose={onClose}>
+                about
+              </MenuButton>
+              <MenuButton hrefs="/movie" onClose={onClose}>
+                movie
+              </MenuButton>
+              <MenuButton hrefs="/goods" onClose={onClose}>
+                goods
+              </MenuButton>
+              <MenuButton hrefs="/contact" onClose={onClose}>
+                contact
+              </MenuButton>
             </Flex>
             <MenuIcons />
           </DrawerBody>

@@ -17,7 +17,7 @@ export const Header: VFC = () => {
         color="gray.50"
         align="center"
         justify="space-between"
-        padding={{ base: 4, md: 6 }}
+        p={{ base: 4, md: 6 }}
       >
         <Flex align="center" mr={16} _hover={{ cursor: "pointer" }}>
           <Box

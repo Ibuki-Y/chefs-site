@@ -1,11 +1,10 @@
 main {
   min-height: 90vh;
-  font-family: "Kameron";
 }
 a {
   text-decoration: none;
 }
-a:hover{
+a:hover {
   opacity: 0.8;
 }
 
