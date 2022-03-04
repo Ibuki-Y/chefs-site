@@ -19,6 +19,10 @@ const theme = extendTheme({
       },
     },
   },
+  font: {
+    heading: "Open Sans, sans-serif",
+    body: "Raleway, sans-serif",
+  },
 });
 
 export default theme;
