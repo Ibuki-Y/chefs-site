@@ -2,12 +2,12 @@ import * as React from "react";
 import { AppProps } from "next/app";
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
-import "../styles/global.css";
+
 import { ChakraProvider } from "@chakra-ui/react";
 import "swiper/css/bundle";
 import "@fontsource/raleway/400.css";
 import "@fontsource/open-sans/700.css";
-
+import "../styles/global.css";
 import theme from "../theme/theme";
 import { Layout } from "../components/templates/Layout";
 

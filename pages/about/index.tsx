@@ -5,6 +5,7 @@ import StopRoundedIcon from "@mui/icons-material/StopRounded";
 import styled, { keyframes } from "styled-components";
 
 import { FadeInTitle } from "../../components/atoms/FadeInTitle";
+import { AboutName } from "../../components/molecules/AboutName";
 
 const About: NextPage = () => {
   return (
@@ -42,18 +43,7 @@ const About: NextPage = () => {
                   <Text>chef&apos;s</Text>
                 </Heading>
 
-                <Flex direction={{ base: "row", md: "column" }} mb={6} fontWeight={600}>
-                  <Text mr={{ base: 3, md: 0 }} mb={{ base: 0, md: 2 }}>
-                    Vo./Gt. アヤナ
-                  </Text>
-                  <Text mr={{ base: 3, md: 0 }} mb={{ base: 0, md: 2 }}>
-                    Gt. フルギヤ
-                  </Text>
-                  <Text mr={{ base: 3, md: 0 }} mb={{ base: 0, md: 2 }}>
-                    Ba. 高田真路
-                  </Text>
-                  <Text>Dr. いぶし銀</Text>
-                </Flex>
+                <AboutName />
 
                 <Text mb={1}>
                   2020年10月結成. &quot;おいしいおんがく&quot; をテーマに,

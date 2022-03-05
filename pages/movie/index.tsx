@@ -32,9 +32,10 @@ const Movie: NextPage = () => {
 
         <ScrollRevealContainer>
           <Text
-            p={{ base: "100px", md: 12 }}
+            p={{ md: 12 }}
+            mt={{ base: "100px", md: 0 }}
             color="blue.800"
-            align="center"
+            textAlign="center"
             fontWeight="700"
             fontSize="2xl"
           >

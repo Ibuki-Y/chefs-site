@@ -34,7 +34,7 @@ export const NewsCard: VFC<Props> = (props) => {
         <Center>
           <Box
             key={id}
-            bg="gray.100"
+            bg="white"
             borderRadius={2}
             shadow="md"
             _hover={{ cursor: "pointer", opacity: 0.8 }}
