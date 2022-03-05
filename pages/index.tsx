@@ -37,7 +37,7 @@ const Home: NextPage = () => {
           </ScrollRevealContainer>
         </Center>
 
-        <HomeMovie />
+        {/* <HomeMovie /> */}
 
         <HomeNews />
 
