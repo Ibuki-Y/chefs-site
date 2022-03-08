@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 import { Image, Center } from "@chakra-ui/react";
 
 import { HomeSwiper } from "../components/molecules/Home/HomeSwiper";
-import { HomeMovie } from "../components/molecules/Home/HomeMovie";
+//import { HomeMovie } from "../components/molecules/Home/HomeMovie";
 import { HomeNews } from "../components/molecules/Home/HomeNews";
 import { Twitter } from "../components/molecules/Home/Twitter";
 
@@ -15,7 +15,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>chef&apos;s official</title>
+        <title>chef&apos;s オフィシャルサイト</title>
       </Head>
 
       <main className="home">

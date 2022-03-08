@@ -8,13 +8,13 @@ export default function Page404() {
     <>
       <Flex justify="center" align="center" direction="column" height="90vh">
         <ScrollRevealContainer>
-          <Text fontSize={{ base: "lg", md: "xl" }} mb={16}>
+          <Text fontSize={{ base: "sm", md: "lg" }} mb={16} wordBreak="keep-all">
             Page 404 | This is not the page you&apos;re looking for.
           </Text>
         </ScrollRevealContainer>
 
         <ScrollRevealContainer delay={300}>
-          <Image src="/logo/logo05.png" width={500} height={500} alt="page 404" />
+          <Image src="/logo/logo05.png" alt="page 404" />
         </ScrollRevealContainer>
       </Flex>
     </>

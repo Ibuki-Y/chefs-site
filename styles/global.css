@@ -3,9 +3,16 @@ main {
 }
 a {
   text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 a:hover {
   opacity: 0.8;
+}
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+*:focus {
+  outline: none;
 }
 
 /* Swiper */

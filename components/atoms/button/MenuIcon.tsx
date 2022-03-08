@@ -6,7 +6,7 @@ type Props = {
   onOpen: () => void;
 };
 
-export const MenuIcon: VFC<Props> = props => {
+export const MenuIcon: VFC<Props> = (props) => {
   const { onOpen } = props;
   return (
     <IconButton
@@ -16,7 +16,7 @@ export const MenuIcon: VFC<Props> = props => {
       variant="unstyled"
       display={{ base: "block", md: "none" }}
       onClick={onOpen}
-      _focus={{ _focus: "none"}}
+      _focus={{ _focus: "none" }}
     />
   );
 };
