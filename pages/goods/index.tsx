@@ -4,7 +4,7 @@ import Head from "next/head";
 import { Image, Stack } from "@chakra-ui/react";
 
 import { FadeInTitle } from "../../components/atoms/FadeInTitle";
-const ScrollRevealContainer = dynamic(import("../../hooks/useScrollReveal"), {
+const ScrollRevealContainer = dynamic(import("../../hooks/useScrollFadeIn"), {
   ssr: false,
 });
 
@@ -23,11 +23,11 @@ const Goods: NextPage = () => {
             <Image src="/goods/goods03.JPG" alt="goods" shadow="dark-lg" rounded="md" />
           </ScrollRevealContainer>
 
-          <ScrollRevealContainer>
+          <ScrollRevealContainer delay={300}>
             <Image src="/goods/goods04.JPG" alt="goods" shadow="dark-lg" rounded="md" />
           </ScrollRevealContainer>
 
-          <ScrollRevealContainer>
+          <ScrollRevealContainer delay={400}>
             <Image src="/goods/goods06.JPG" alt="goods" shadow="dark-lg" rounded="md" />
           </ScrollRevealContainer>
         </Stack>
