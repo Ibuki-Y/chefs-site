@@ -69,6 +69,8 @@ const About: NextPage = () => {
                       <Link
                         href="https://twitter.com/chefs_band?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor/"
                         _focus={{ _focus: "none" }}
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         Twitter
                       </Link>
@@ -78,6 +80,8 @@ const About: NextPage = () => {
                       <Link
                         href="https://www.instagram.com/chefs_band/?utm_medium=copy_link/"
                         _focus={{ _focus: "none" }}
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         Instagram
                       </Link>
@@ -87,6 +91,8 @@ const About: NextPage = () => {
                       <Link
                         href="https://eggs.mu/artist/cheafs_band/"
                         _focus={{ _focus: "none" }}
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         Eggs
                       </Link>

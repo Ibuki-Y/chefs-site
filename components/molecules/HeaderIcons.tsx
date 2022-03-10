@@ -13,6 +13,8 @@ export const HeaderIcons: VFC = () => {
         href="https://twitter.com/chefs_band?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor/"
         ml={4}
         _hover={{ opacity: 0.7 }}
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <TwitterIcon />
       </Box>
@@ -21,6 +23,8 @@ export const HeaderIcons: VFC = () => {
         href="https://www.instagram.com/chefs_band/?utm_medium=copy_link/"
         ml={4}
         _hover={{ opacity: 0.7 }}
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <InstagramIcon />
       </Box>
@@ -29,6 +33,8 @@ export const HeaderIcons: VFC = () => {
         href="https://music.apple.com/jp/artist/chefs/1592627921/"
         ml={4}
         _hover={{ opacity: 0.7 }}
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <AppleIcon />
       </Box>
@@ -37,6 +43,8 @@ export const HeaderIcons: VFC = () => {
         href="https://open.spotify.com/artist/7I6vgeUew4Ew1pxztnFhMa/"
         ml={4}
         _hover={{ opacity: 0.7 }}
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <ContactlessIcon />
       </Box>
