@@ -9,7 +9,7 @@ const News: NextPage = () => {
   return (
     <>
       <Head>
-        <title>chef&apos;s news</title>
+        <title>chef&apos;s オフィシャルサイト | news</title>
       </Head>
 
       <main className="news">

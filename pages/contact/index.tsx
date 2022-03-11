@@ -75,7 +75,7 @@ const Contact: NextPage = () => {
   return (
     <>
       <Head>
-        <title>chef&apos;s contact</title>
+        <title>chef&apos;s オフィシャルサイト | contact</title>
       </Head>
 
       <main className="contact">

@@ -14,7 +14,7 @@ const Movie: NextPage = () => {
   return (
     <>
       <Head>
-        <title>chef&apos;s movie</title>
+        <title>chef&apos;s オフィシャルサイト | movie</title>
       </Head>
 
       <main className="movie">

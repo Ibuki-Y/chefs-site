@@ -11,7 +11,7 @@ const About: NextPage = () => {
   return (
     <>
       <Head>
-        <title>chef&apos;s about</title>
+        <title>chef&apos;s オフィシャルサイト | about</title>
       </Head>
 
       <main className="about">

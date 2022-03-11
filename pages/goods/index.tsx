@@ -12,7 +12,7 @@ const Goods: NextPage = () => {
   return (
     <>
       <Head>
-        <title>chef&apos;s goods</title>
+        <title>chef&apos;s オフィシャルサイト | goods</title>
       </Head>
 
       <main className="goods">

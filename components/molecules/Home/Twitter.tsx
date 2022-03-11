@@ -2,6 +2,7 @@ import { VFC } from "react";
 import dynamic from "next/dynamic";
 import { Box } from "@chakra-ui/react";
 import { Timeline } from "react-twitter-widgets";
+import { TwitterTimelineEmbed } from "react-twitter-embed";
 
 const ScrollRevealContainer = dynamic(import("../../../hooks/useScrollFadeIn"), {
   ssr: false,
@@ -19,7 +20,7 @@ export const Twitter: VFC = () => {
             }}
             options={{
               height: "800",
-              width: "700",
+              width: "500",
               chrome: "nofooternoheader",
             }}
           />

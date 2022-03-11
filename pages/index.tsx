@@ -41,9 +41,9 @@ const Home: NextPage = () => {
 
         <HomeNews />
 
-        <Center>
+        {/* <Center>
           <Twitter />
-        </Center>
+        </Center> */}
       </main>
     </>
   );
