@@ -31,7 +31,7 @@ export const NewsCard: VFC<Props> = (props) => {
   return (
     <>
       <ScrollRevealContainer move={move}>
-        <Center>
+        <Center mx={4}>
           <Box
             key={id}
             bg="white"
@@ -40,12 +40,12 @@ export const NewsCard: VFC<Props> = (props) => {
             _hover={{ cursor: "pointer", opacity: 0.8 }}
             onClick={onOpen}
             mb="100px"
-            w={{ base: "50vh", md: "80vh" }}
+            maxWidth="900px"
           >
             <Stack textAlign="center" spacing="20px">
               {image ? <Image src={image} alt={title} m="auto" borderRadius={2} /> : null}
 
-              <Text fontSize="xl" fontWeight="700">
+              <Text fontSize="xl" fontWeight="700" color="blue.800">
                 {title}
               </Text>
               <Text fontSize="md" color="gray.600">
@@ -62,13 +62,19 @@ export const NewsCard: VFC<Props> = (props) => {
       <Modal isOpen={isOpen} onClose={onClose} size="4xl">
         <ModalOverlay />
         <ModalContent alignItems="center" p={4} bg="gray.100">
-          <ModalHeader fontSize="3xl" color="blue.800" m={4}>
+          <ModalHeader fontSize={{ base: "lg", md: "2xl" }} color="blue.800" m={2}>
             {title}
           </ModalHeader>
           <ModalCloseButton _focus={{ _focus: "none" }} />
           <ModalBody>
             {image ? <Image src={image} alt={title} m="auto" borderRadius={2} /> : null}
-            <Text whiteSpace="pre-wrap" p={8} fontSize="lg" color="gray.800">
+            <Text
+              py={8}
+              fontSize={{ base: "md", md: "lg" }}
+              color="gray.800"
+              whiteSpace="pre-line"
+              lineHeight={1.3}
+            >
               {contents}
             </Text>
           </ModalBody>

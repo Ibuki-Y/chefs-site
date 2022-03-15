@@ -16,6 +16,9 @@ button {
 }
 
 /* Swiper */
+#swiper-color {
+  max-width: 1300px;
+}
 #swiper-color .swiper-button-next {
   color: white;
 }

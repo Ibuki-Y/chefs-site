@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import YouTube from "react-youtube";
 import Head from "next/head";
-import { Text, Box } from "@chakra-ui/react";
+import { Text, Center } from "@chakra-ui/react";
 import dynamic from "next/dynamic";
 
 import { FadeInTitle } from "../../components/atoms/FadeInTitle";
@@ -21,13 +21,13 @@ const Movie: NextPage = () => {
         <FadeInTitle title="Movie" />
 
         <ScrollRevealContainer>
-          <Box mx={5}>
+          <Center mx={5}>
             <YouTube
               videoId="K9MKn07Z-pA"
               className={style.iframe}
               containerClassName={style.youtube}
             />
-          </Box>
+          </Center>
         </ScrollRevealContainer>
 
         <ScrollRevealContainer>

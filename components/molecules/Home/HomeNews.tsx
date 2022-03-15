@@ -11,7 +11,7 @@ const ScrollRevealContainer = dynamic(import("../../../hooks/useScrollFadeIn"), 
 export const HomeNews: VFC = () => {
   return (
     <>
-      <Box mt="100px" display={{ base: "block", md: "none" }}>
+      <Box mt="100px" mx={4} display={{ base: "block", md: "none" }}>
         <ScrollRevealContainer move="left">
           <Heading textAlign="center" color="blue.800">
             <Link href="/news">

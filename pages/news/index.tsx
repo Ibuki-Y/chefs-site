@@ -26,7 +26,7 @@ const News: NextPage = () => {
 
           <NewsCard
             id={2}
-            image="/news/news01.jpeg"
+            image="/news/news02.jpeg"
             title="3月のお知らせ <1>"
             date="2022/3/1"
             contents=""
@@ -34,7 +34,7 @@ const News: NextPage = () => {
 
           <NewsCard
             id={3}
-            image="/news/news02.jpeg"
+            image="/news/news03.jpeg"
             title="3月のお知らせ <2>"
             date="2022/3/1"
             contents=""
@@ -42,9 +42,9 @@ const News: NextPage = () => {
 
           <NewsCard
             id={4}
-            image="/news/news03.jpeg"
+            image="/news/news04.JPG"
             title="3月のお知らせ <3>"
-            date="2022/3/1"
+            date="2022/3/16"
             contents=""
           />
         </Stack>

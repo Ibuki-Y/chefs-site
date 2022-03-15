@@ -1,8 +1,7 @@
 import { VFC } from "react";
 import dynamic from "next/dynamic";
-import { Box } from "@chakra-ui/react";
+import { Box, Center } from "@chakra-ui/react";
 import { Timeline } from "react-twitter-widgets";
-import { TwitterTimelineEmbed } from "react-twitter-embed";
 
 const ScrollRevealContainer = dynamic(import("../../../hooks/useScrollFadeIn"), {
   ssr: false,
@@ -10,36 +9,20 @@ const ScrollRevealContainer = dynamic(import("../../../hooks/useScrollFadeIn"), 
 
 export const Twitter: VFC = () => {
   return (
-    <Box mt={{ md: "100px" }}>
+    <Center m={10} mt="80px">
       <ScrollRevealContainer>
-        <Box m={{ base: 14, md: 10 }} p={8} display={{ base: "none", md: "flex" }}>
-          <Timeline
-            dataSource={{
-              sourceType: "profile",
-              screenName: "chefs_band",
-            }}
-            options={{
-              height: "800",
-              width: "500",
-              chrome: "nofooternoheader",
-            }}
-          />
-        </Box>
-
-        <Box m={12} display={{ base: "flex", md: "none" }}>
-          <Timeline
-            dataSource={{
-              sourceType: "profile",
-              screenName: "chefs_band",
-            }}
-            options={{
-              height: "500",
-              width: "500",
-              chrome: "nofooternoheader",
-            }}
-          />
-        </Box>
+        <Timeline
+          dataSource={{
+            sourceType: "profile",
+            screenName: "chefs_band",
+          }}
+          options={{
+            height: "85vh",
+            width: "700px",
+            chrome: "nofooternoheader",
+          }}
+        />
       </ScrollRevealContainer>
-    </Box>
+    </Center>
   );
 };

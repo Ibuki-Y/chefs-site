@@ -27,7 +27,7 @@ const Home: NextPage = () => {
 
         <HomeSwiper />
 
-        <Center my={{ base: 12, md: 4 }}>
+        <Center my={{ base: 10, md: 8 }}>
           <ScrollRevealContainer delay={600}>
             <Image
               src="/logo/おいしいおんがく01.png"
@@ -41,9 +41,7 @@ const Home: NextPage = () => {
 
         <HomeNews />
 
-        {/* <Center>
-          <Twitter />
-        </Center> */}
+        <Twitter />
       </main>
     </>
   );

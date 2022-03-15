@@ -9,7 +9,7 @@ export const Seo = () => {
       twitter={{
         handle: "@chefs_band",
         site: "@chefs_band",
-        cardType: "summary",
+        cardType: "summary_large_image",
       }}
       openGraph={{
         locale: "ja_JP",
@@ -22,8 +22,8 @@ export const Seo = () => {
         images: [
           {
             url: "/logo/logo06.JPG",
-            width: 500,
-            height: 500,
+            width: 800,
+            height: 800,
             alt: "logo",
           },
         ],

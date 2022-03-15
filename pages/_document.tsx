@@ -6,7 +6,9 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="ja">
-        <Head></Head>
+        <Head>
+          <script async src="https://platform.twitter.com/widgets.js" />
+        </Head>
         <body>
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />
           <Main />
