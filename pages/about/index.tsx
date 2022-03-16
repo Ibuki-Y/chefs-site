@@ -27,6 +27,7 @@ const About: NextPage = () => {
               src="/artist/artist01.JPG"
               height={{ base: "100%", md: "65%" }}
               width={{ base: "100%", md: "65%" }}
+              maxWidth="1000px"
               alt="promotion photo"
               borderRadius={3}
               mr={{ base: 0, md: 6 }}

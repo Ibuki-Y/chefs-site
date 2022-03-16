@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import dynamic from "next/dynamic";
 import Head from "next/head";
-import { Image, Stack, Center, Flex } from "@chakra-ui/react";
+import { Image, Flex } from "@chakra-ui/react";
 
 import { FadeInTitle } from "../../components/atoms/FadeInTitle";
 const ScrollRevealContainer = dynamic(import("../../hooks/useScrollFadeIn"), {
