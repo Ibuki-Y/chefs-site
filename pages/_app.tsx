@@ -4,6 +4,7 @@ import Head from "next/head";
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
 import { ChakraProvider } from "@chakra-ui/react";
+import PropTypes from "prop-types";
 import "swiper/css/bundle";
 import "@fontsource/raleway/400.css";
 import "@fontsource/open-sans/700.css";
@@ -18,8 +19,15 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
+  React.useEffect(() => {
+    const jssStyles = document.querySelector("#jss-server-side");
+    if (jssStyles) {
+      jssStyles.parentElement.removeChild(jssStyles);
+    }
+  }, []);
+
   return (
-    <>
+    <React.Fragment>
       <Head>
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -39,8 +47,13 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
           <Component {...pageProps} />
         </Layout>
       </ChakraProvider>
-    </>
+    </React.Fragment>
   );
 }
+
+MyApp.propTypes = {
+  Component: PropTypes.elementType.isRequired,
+  pageProps: PropTypes.object.isRequired,
+};
 
 export default MyApp;

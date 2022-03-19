@@ -6,7 +6,7 @@ import dynamic from "next/dynamic";
 
 import { FadeInTitle } from "../../components/atoms/FadeInTitle";
 import style from "../../styles/Youtube.module.css";
-const ScrollRevealContainer = dynamic(import("../../hooks/useScrollReveal"), {
+const ScrollRevealContainer = dynamic(import("../../hooks/useScrollFadeIn"), {
   ssr: false,
 });
 
@@ -30,7 +30,7 @@ const Movie: NextPage = () => {
           </Center>
         </ScrollRevealContainer>
 
-        <ScrollRevealContainer>
+        <ScrollRevealContainer delay={200}>
           <Text
             p={{ md: 12 }}
             mt={{ base: "100px", md: 0 }}

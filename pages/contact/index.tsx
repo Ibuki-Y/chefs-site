@@ -70,7 +70,6 @@ const Contact: NextPage = () => {
       showMessage({ title: "空欄があります.", status: "error" });
     }
   };
-  console.log(message);
 
   return (
     <>

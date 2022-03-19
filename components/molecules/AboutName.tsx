@@ -1,5 +1,5 @@
 import { VFC } from "react";
-import { Flex, Text } from "@chakra-ui/react";
+import { Flex, Text, Box } from "@chakra-ui/react";
 
 export const AboutName: VFC = () => {
   return (
@@ -22,22 +22,22 @@ export const AboutName: VFC = () => {
         fontWeight={600}
         display={{ base: "flex", md: "none" }}
       >
-        <Text mr={3} textAlign="center">
-          Vo./Gt.
+        <Box mr={3} textAlign="center">
+          <Text>Vo./Gt.</Text>
           <Text mt={1}>アヤナ</Text>
-        </Text>
-        <Text mr={3} textAlign="center">
-          Gt.
+        </Box>
+        <Box mr={3} textAlign="center">
+          <Text>Gt.</Text>
           <Text mt={1}>フルギヤ</Text>
-        </Text>
-        <Text mr={3} textAlign="center">
-          Ba.
+        </Box>
+        <Box mr={3} textAlign="center">
+          <Text>Ba.</Text>
           <Text mt={1}>高田真路</Text>
-        </Text>
-        <Text textAlign="center">
-          Dr.
+        </Box>
+        <Box textAlign="center">
+          <Text>Dr.</Text>
           <Text mt={1}>いぶし銀</Text>
-        </Text>
+        </Box>
       </Flex>
     </>
   );

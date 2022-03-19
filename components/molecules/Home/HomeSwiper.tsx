@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Scrollbar, Autoplay, Navigation } from "swiper";
 import { Box } from "@chakra-ui/react";
 
+import { useLoading } from "../../../hooks/useLoading";
 const ScrollRevealContainer = dynamic(import("../../../hooks/useScrollFadeIn"), {
   ssr: false,
 });
@@ -18,6 +19,11 @@ const images = [
 ];
 
 export const HomeSwiper: VFC = () => {
+  const { setLoading } = useLoading();
+  const loadedImage = () => {
+    setLoading(true);
+  };
+
   return (
     <ScrollRevealContainer delay={300}>
       <Box mx={{ base: 2, md: 8 }} mt={{ base: 10, md: 4 }}>
@@ -45,6 +51,7 @@ export const HomeSwiper: VFC = () => {
                   layout="responsive"
                   alt="chef's"
                   className="slide-image"
+                  onLoadingComplete={loadedImage}
                 />
               </SwiperSlide>
             );
