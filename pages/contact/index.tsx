@@ -37,7 +37,7 @@ const Contact: NextPage = () => {
 
       send(service_id, template_id, template_param)
         .then(() => {
-          showMessage({ title: "送信しました.", status: "success" });
+          showMessage({ title: "送信しました!", status: "success" });
           setName("");
           setMail("");
           setTel("");

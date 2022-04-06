@@ -26,25 +26,25 @@ const News: NextPage = () => {
 
           <NewsCard
             id={2}
-            image="/news/news02.jpeg"
-            title="3月のお知らせ <1>"
-            date="2022/3/1"
+            image="/news/news07.JPG"
+            title="4月のお知らせ <1>"
+            date="2022/4/1"
             contents=""
           />
 
           <NewsCard
             id={3}
-            image="/news/news03.jpeg"
-            title="3月のお知らせ <2>"
-            date="2022/3/1"
+            image="/news/news08.JPG"
+            title="4月のお知らせ <2>"
+            date="2022/4/1"
             contents=""
           />
 
           <NewsCard
             id={4}
-            image="/news/news04.JPG"
-            title="3月のお知らせ <3>"
-            date="2022/3/16"
+            image="/news/news06.JPG"
+            title="東京晩餐会"
+            date="2022/4/3"
             contents=""
           />
         </Stack>
